@@ -148,6 +148,37 @@
           </div>
 
       </section>
+
+      <section class="quote__container">
+          <div class="quote_image_overlay"></div>
+              <h3 class="quote_image_text">
+                  WHEN A MAN'S STOMACH IS FULL IT MAKES NO DIFFERENCE WHETHER HE IS RICH OR POOR
+              </h3>
+         
+      </section>
+
     </main>
+
+    <footer>
+        <img src="assets/logo.png" alt="logo" />
+        <ul>
+          <li>Pricing</li>
+          <li>Terms and condition</li>
+          <li>Partnership</li>
+          <li>Career</li>
+          <li>Contact</li>
+        </ul>
+      </footer>
+      <script>
+        const hamburgermenu = document.getElementById("hamburgermenu");
+        const mobileNavDropDown = document.querySelector(
+          ".mobile_navbar_items"
+        );
+        window.addEventListener("click", () => {
+          if (mobileNavDropDown.classList.contains("hamburger_menu_close"))
+            return mobileNavDropDown.classList.remove("hamburger_menu_close");
+          return mobileNavDropDown.classList.add("hamburger_menu_close");
+        });
+      </script>
 </body>
 </html>
